@@ -21,7 +21,9 @@
   <main class="shell">
     <header class="hero">
       <div class="avatar-wrap">
-        <img class="avatar" src="assets/profile.jpg" alt="Portrait of Shlomi Green">
+        <button type="button" class="avatar-button" id="avatar-button" aria-label="Enlarge profile photo">
+          <img class="avatar" src="assets/profile.jpg" alt="Portrait of Shlomi Green">
+        </button>
         <span class="status-dot" title="Available to connect"></span>
       </div>
       <div class="hero-copy">
@@ -72,6 +74,14 @@
       </div>
     </footer>
   </main>
+
+  <dialog id="profile-dialog" class="profile-dialog" aria-labelledby="profile-title">
+    <div class="profile-card">
+      <button type="button" class="close-button" id="profile-close" aria-label="Close">×</button>
+      <h2 id="profile-title" class="sr-only">Shlomi Green profile photo</h2>
+      <img src="assets/profile.jpg" alt="Portrait of Shlomi Green, enlarged">
+    </div>
+  </dialog>
 
   <dialog id="qr-dialog" class="qr-dialog" aria-labelledby="qr-title">
     <div class="dialog-card">
