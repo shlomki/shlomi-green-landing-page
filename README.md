@@ -1,27 +1,34 @@
-# Shlomi Green landing page
+# Shlomi Green
 
-Static Cloudflare Pages-ready site. No build step is required.
+Personal contact and profile landing page for Shlomi Green, Engineering Manager at Agoda.
 
-## Assets to add
+**Live site:** [shlomi.green](https://shlomi.green)
 
-- `assets/profile.jpg` — copied from the existing Carrd page.
-- `assets/promptpay-qr.jpg` — the supplied PromptPay QR image, used by the PromptPay modal and download link.
+## Features
 
-The page uses a tiny client-side localization layer and keeps the user's language preference locally. Country selection currently uses browser language/timezone as a safe static fallback; a Cloudflare Pages Function can later provide `request.cf.country` for more accurate country detection without redirects.
+- Responsive, lightweight static site with no build step.
+- Contact shortcuts for Thailand and Israel phone numbers, LINE, WhatsApp, work and personal email, LinkedIn, and Facebook.
+- PromptPay QR modal with download and share actions.
+- Save-contact action that generates a downloadable vCard.
+- Native share support with clipboard fallback.
+- English, Thai, and Hebrew translations, including right-to-left layout for Hebrew.
+- Region-aware contact ordering using browser settings and Cloudflare request country data when available.
+- Local persistence for language and region preferences.
+- Accessible controls, semantic markup, responsive layout, and reduced-motion-friendly interactions.
 
-## Private Tailscale preview
+## Stack
 
-The current working copy is available only to devices on the same tailnet at:
+- HTML, CSS, and vanilla JavaScript
+- Cloudflare Pages Functions for lightweight request context detection
+- Static assets served from the repository
 
-<https://shlomi-pc-linux.kite-yo.ts.net:8445/>
+## Development
 
-The preview uses the user service `shlomi-landing-preview.service` on `127.0.0.1:8787`, fronted by Tailscale Serve. It starts automatically for this user and does not expose the site through Cloudflare or the public internet.
+No dependencies or build command are required. Serve the repository root with any static file server, or deploy it directly to Cloudflare Pages.
 
-Useful maintenance commands:
+For Cloudflare Pages, use:
 
-```bash
-systemctl --user status shlomi-landing-preview.service
-systemctl --user restart shlomi-landing-preview.service
-systemctl --user stop shlomi-landing-preview.service
-tailscale serve status
-```
+- **Build command:** none
+- **Build output directory:** `/`
+
+The `/functions` directory is deployed automatically as Pages Functions.
