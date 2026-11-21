@@ -7,8 +7,8 @@ Personal contact and profile landing page for Shlomi Green, Engineering Manager 
 ## Features
 
 - Responsive, lightweight static site with no build step.
-- Contact shortcuts for Thailand and Israel phone numbers, LINE, WhatsApp, work and personal email, LinkedIn, and Facebook.
-- PromptPay QR modal with download and share actions.
+- Contact shortcuts.
+- Popup modal.
 - Save-contact action that generates a downloadable vCard.
 - Native share support with clipboard fallback.
 - English, Thai, and Hebrew translations, including right-to-left layout for Hebrew.
