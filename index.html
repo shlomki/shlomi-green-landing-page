@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contact Shlomi Green — Engineering Manager @ Agoda, based in Bangkok, Thailand.">
+  <meta name="theme-color" content="#102a43">
+  <meta property="og:title" content="Shlomi Green">
+  <meta property="og:description" content="Engineering Manager @ Agoda">
+  <meta property="og:type" content="website">
+  <title>Shlomi Green · Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"><span></span><span></span></div>
+  <main class="shell">
+    <header class="hero">
+      <div class="avatar-wrap">
+        <img class="avatar" src="assets/profile.jpg" alt="Portrait of Shlomi Green">
+        <span class="status-dot" title="Available to connect"></span>
+      </div>
+      <div class="hero-copy">
+        <h1 data-i18n="name">Shlomi <em>Green</em></h1>
+        <div class="role-line">
+          <p class="role" data-i18n="role">Engineering Manager <span>@ Agoda</span></p>
+          <p class="location-label"><svg class="pin" aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M12 21s7-6.08 7-12A7 7 0 0 0 5 9c0 5.92 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg><span data-i18n="location">Bangkok, Thailand</span></p>
+        </div>
+      </div>
+      <div class="language-switcher" aria-label="Language selector">
+        <button type="button" class="language-button" aria-expanded="false">EN <span>⌄</span></button>
+        <div class="language-menu" hidden>
+          <button type="button" data-language="en">English</button>
+          <button type="button" data-language="th">ไทย</button>
+          <button type="button" data-language="he">עברית</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="primary-panel" class="contact-section" aria-labelledby="primary-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="primary-title" data-i18n="primaryTitle">Contact</h2>
+        </div>
+      </div>
+      <div id="primary-links" class="link-grid"></div>
+    </section>
+
+    <button id="more-toggle" class="more-toggle" type="button" aria-expanded="false" aria-controls="more-panel">
+      <span data-i18n="seeMore">See more ways to connect</span><span class="chevron">↓</span>
+    </button>
+
+    <section id="more-panel" class="contact-section more-panel" hidden aria-labelledby="more-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker" data-i18n="allOptions">All options</p>
+          <h2 id="more-title" data-i18n="moreTitle">Other contacts</h2>
+        </div>
+      </div>
+      <div id="secondary-links" class="link-grid"></div>
+    </section>
+
+    <footer>
+      <p class="footer-note" data-i18n="footer">Good conversations start with a simple hello.</p>
+      <div class="footer-actions">
+        <button type="button" class="text-button" id="share-button" data-i18n="share">Share contact</button>
+        <button type="button" class="text-button" id="vcard-button" data-i18n="save">Save contact</button>
+      </div>
+    </footer>
+  </main>
+
+  <dialog id="qr-dialog" class="qr-dialog" aria-labelledby="qr-title">
+    <div class="dialog-card">
+      <button type="button" class="close-button" id="qr-close" aria-label="Close">×</button>
+      <p class="section-kicker">PromptPay</p>
+      <h2 id="qr-title" data-i18n="qrTitle">Send a payment</h2>
+      <p class="dialog-copy" data-i18n="qrCopy">Scan this QR code with your banking app. You can enter any amount.</p>
+      <div class="qr-frame">
+        <img id="qr-image" src="assets/promptpay-qr.jpg" alt="PromptPay QR code">
+        <div id="qr-missing" class="qr-missing" hidden><strong>QR image pending</strong><span>Add the supplied PromptPay image as <code>assets/promptpay-qr.jpg</code>.</span></div>
+      </div>
+      <div class="dialog-actions">
+        <a class="button primary" id="download-qr" href="assets/promptpay-qr.jpg" download data-i18n="download">Download QR</a>
+        <button class="button secondary" id="share-qr" type="button" data-i18n="shareQr">Share QR</button>
+      </div>
+      <p class="small-note" data-i18n="qrNote">No fixed amount · Thai QR Payment</p>
+    </div>
+  </dialog>
+</body>
+</html>

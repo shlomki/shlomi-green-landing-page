@@ -1,0 +1,17 @@
+# Local OpenClaw workspace metadata
+AGENTS.md
+BOOTSTRAP.md
+IDENTITY.md
+SOUL.md
+USER.md
+MEMORY.md
+memory/
+
+# Local development and system files
+.env
+.env.*
+!.env.example
+.dev.vars
+.DS_Store
+node_modules/
+.wrangler/
