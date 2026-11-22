@@ -9,7 +9,7 @@ const contactLabels = {
   he: { phoneTh:['טלפון','תאילנד'], phoneIl:['טלפון','ישראל'], line:['LINE','שלחו לי הודעה'], email:['אימייל','עבודה'], emailPersonal:['אימייל','אישי'], pay:['PromptPay','העברת כסף'], whatsapp:['וואטסאפ','שלחו לי הודעה'], linkedin:['לינקדאין','פרופיל מקצועי'], facebook:['פייסבוק','פרופיל חברתי'] }
 };
 const contacts = {
-  th: [{kind:'phoneTh', icon:'☎', label:'Phone', hint:'Thailand', href:'tel:098-1616-000'}, {kind:'line', icon:'L', label:'LINE', hint:'Message me', href:'https://line.me/ti/p/jGyPOinxkY'}, {kind:'email', icon:'@', label:'Email', hint:'Work', href:'mailto:shlomi.green@agoda.com'}, {kind:'pay', icon:'฿', label:'PromptPay', hint:'Any amount', action:'qr'}],
+  th: [{kind:'phoneTh', icon:'☎', label:'Phone', hint:'Thailand', href:'tel:+66981616000'}, {kind:'line', icon:'L', label:'LINE', hint:'Message me', href:'https://line.me/ti/p/jGyPOinxkY'}, {kind:'email', icon:'@', label:'Email', hint:'Work', href:'mailto:shlomi.green@agoda.com'}, {kind:'pay', icon:'฿', label:'PromptPay', hint:'Any amount', action:'qr'}],
   il: [{kind:'phoneIl', icon:'☎', label:'Phone', hint:'Israel', href:'tel:+972-54-2-123-123'}, {kind:'whatsapp', icon:'◉', label:'WhatsApp', hint:'Message me', href:'https://wa.me/972542123123'}, {kind:'emailPersonal', icon:'@', label:'Email', hint:'Personal', href:'mailto:shlomki+carrd@gmail.com'}],
   social: [{kind:'linkedin', icon:'in', label:'LinkedIn', hint:'Professional profile', href:'https://www.linkedin.com/in/shlomki'}, {kind:'facebook', icon:'f', label:'Facebook', hint:'Social profile', href:'https://www.facebook.com/shlomki'}]
 };
@@ -43,7 +43,7 @@ $('#vcard-button').addEventListener('click',()=>{
     'FN:Shlomi Green',
     'ORG:Agoda',
     'TITLE:Engineering Manager',
-    'TEL;TYPE=CELL,VOICE;LABEL=Thailand:098-1616-000',
+    'TEL;TYPE=CELL,VOICE;LABEL=Thailand:+66981616000',
     'TEL;TYPE=CELL,VOICE;LABEL=Israel:+972-54-2-123-123',
     'EMAIL;TYPE=WORK:shlomi.green@agoda.com',
     'EMAIL;TYPE=HOME:shlomki+carrd@gmail.com',
