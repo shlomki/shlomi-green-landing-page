@@ -33,7 +33,7 @@ $('#more-toggle').addEventListener('click',()=>{ const button=$('#more-toggle');
 $('#qr-close').addEventListener('click',closeQr); $('#qr-dialog').addEventListener('click',event=>{if(event.target.id==='qr-dialog')closeQr();});
 $('#avatar-button').addEventListener('click',openProfile); $('#profile-close').addEventListener('click',closeProfile); $('#profile-dialog').addEventListener('click',event=>{if(event.target.id==='profile-dialog')closeProfile();});
 $('#share-qr').addEventListener('click',async()=>{ const url=$('#qr-image').src; if (navigator.share) await navigator.share({title:'PromptPay QR',text:'PromptPay QR code',url}).catch(()=>{}); else alert('Long-press or right-click the QR code to share it.'); });
-$('#share-button').addEventListener('click',async()=>{ const data={title:'Shlomi Green',text:'Contact Shlomi Green',url:location.href}; if(navigator.share) await navigator.share(data).catch(()=>{}); else await navigator.clipboard?.writeText(location.href); });
+$('#share-button').addEventListener('click',async()=>{ const data={title:'Shlomi Green',text:'Say hello!',url:location.href}; if(navigator.share) await navigator.share(data).catch(()=>{}); else await navigator.clipboard?.writeText(location.href); });
 function vCardEscape(value) { return String(value).replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\r?\n/g,'\\n'); }
 $('#vcard-button').addEventListener('click',()=>{
   const vcard=[
